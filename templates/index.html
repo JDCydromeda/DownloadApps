@@ -5,7 +5,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-	<title>Downloader</title>
+	<title>{{ title }}</title>
 	<link rel="stylesheet" href="{% static 'bootstrap/css/bootstrap.min.css' %}">
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cookie">
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
@@ -19,7 +19,7 @@
 	<div>
 		<nav class="navbar navbar-light navbar-expand-md sticky-top navigation-clean-button"
 			style="height:80px;background-color:#37434d;color:#ffffff;">
-			<div class="container-fluid"><a class="navbar-brand" href="#"><i class="fa fa-globe"></i>&nbsp;Swoop
+			<div class="container-fluid"><a class="navbar-brand" href="#"><i class="fa fa-globe"></i>&nbsp;{{ company_name }}
 					Inc.</a><button data-bs-toggle="collapse" class="navbar-toggler" data-bs-target="#navcol-1"><span
 						class="visually-hidden">Toggle navigation</span><span
 						class="navbar-toggler-icon"></span></button>
@@ -52,10 +52,10 @@
 
 				<!-- Slide Text Layer -->
 				<div class="fw_al_001_slide">
-					<h3 data-animation="animated fadeInUp">HELLO WORLD</h3>
-					<h1 data-animation="animated fadeInUp">THIS IS A SLIDER</h1>
-					<p data-animation="animated fadeInUp">lorem 2018, ipsum out of sapien, consequa</p>
-					<a href="#" data-animation="animated fadeInUp">iewx donecti</a>
+					<h3 data-animation="animated fadeInUp">Swoop Inc.</h3>
+					<h1 data-animation="animated fadeInUp">Swoop The Browser</h1>
+					<p data-animation="animated fadeInUp">Check it out 10X speed</p>
+					<a href="#" data-animation="animated fadeInUp">Download</a>
 				</div>
 			</div>
 			<!-- End of Slide -->
@@ -95,340 +95,26 @@
 		</div><!-- End of Wrapper For Slides -->
 
 	</div> <!-- End Paradise Slider -->
-
-
-
-
 	<!-- End -->
 	<div class="container" id="apps">
 		<div class="row">
 			<div class="col-md-12">
 				<div class="accordion" role="tablist" id="apps-accordion">
 					<div class="accordion-item panel-apps">
-						<h2 class="accordion-header mb-0" role="tab"><button class="accordion-button"
-								data-bs-toggle="collapse" data-bs-target="#apps-accordion .item-1" aria-expanded="true"
-								aria-controls="apps-accordion .item-1"><i
-									class="material-icons keyboard_arrow_down"></i>For all</button></h2>
 						<div class="accordion-collapse collapse show item-1" role="tabpanel"
 							data-bs-parent="#apps-accordion">
 							<div class="accordion-body">
 								<div class="text-center">
 									<div class="row is-flex">
+										{% for app in apps %}
 										<div class="col-4 col-sm-3 col-md-2">
-											<div class="app"><a href="#"><img src="{% static 'img/android-auto.png' %}"
-														width="60" height="60"><span>Android Auto</span></a></div>
-										</div>
-										<div class="col-4 col-sm-3 col-md-2">
-											<div class="app"><a href="#"><img src="{% static 'img/android-messages.png' %}"
-														width="60" height="60"><span>Android Messages</span></a></div>
-										</div>
-										<div class="col-4 col-sm-3 col-md-2">
-											<div class="app"><a href="#"><img src="{% static 'img/android-one.png' %}"
-														width="60" height="60"><span>Android OS</span></a></div>
-										</div>
-										<div class="col-4 col-sm-3 col-md-2">
-											<div class="app"><a href="#"><img src="{% static 'img/android-os.png' %}" width="60"
-														height="60"><span>Android One</span></a></div>
-										</div>
-										<div class="col-4 col-sm-3 col-md-2">
-											<div class="app"><a href="#"><img src="{% static 'img/android-pay.png' %}"
-														width="60" height="60"><span>Android Pay</span></a></div>
-										</div>
-										<div class="col-4 col-sm-3 col-md-2">
-											<div class="app"><a href="#"><img src="{% static 'img/android-phones.png' %}"
-														width="60" height="60"><span>Android Phones</span></a></div>
-										</div>
-										<div class="col-4 col-sm-3 col-md-2">
-											<div class="app"><a href="#"><img src="{% static 'img/android-tablets.png' %}"
-														width="60" height="60"><span>Android Tablets</span></a></div>
-										</div>
-										<div class="col-4 col-sm-3 col-md-2">
-											<div class="app"><a href="#"><img src="{% static 'img/android-wear.png' %}"
-														width="60" height="60"><span>Android Wear</span></a></div>
-										</div>
-										<div class="col-4 col-sm-3 col-md-2">
-											<div class="app"><a href="#"><img src="{% static 'img/calendar.png' %}" width="60"
-														height="60"><span>Calendar</span></a></div>
-										</div>
-										<div class="col-4 col-sm-3 col-md-2">
-											<div class="app"><a href="#"><img src="{% static 'img/cardboard.png' %}" width="60"
-														height="60"><span>Cardboard</span></a></div>
-										</div>
-										<div class="col-4 col-sm-3 col-md-2">
-											<div class="app"><a href="#"><img src="{% static 'img/chrome.png' %}" width="60"
-														height="60"><span>Chrome</span></a></div>
-										</div>
-										<div class="col-4 col-sm-3 col-md-2">
-											<div class="app"><a href="#"><img src="{% static 'img/chrome-web-store.png' %}"
-														width="60" height="60"><span>Chrome Web Store</span></a></div>
-										</div>
-										<div class="col-4 col-sm-3 col-md-2">
-											<div class="app"><a href="#"><img src="{% static 'img/chromebook.png' %}" width="60"
-														height="60"><span>Chromebook</span></a></div>
-										</div>
-										<div class="col-4 col-sm-3 col-md-2">
-											<div class="app"><a href="#"><img src="{% static 'img/chromecast.png' %}" width="60"
-														height="60"><span>Chromecast</span></a></div>
-										</div>
-										<div class="col-4 col-sm-3 col-md-2">
-											<div class="app"><a href="#"><img src="{% static 'img/contacts.png" width="60"
-														height="60"><span>Contacts</span></a></div>
-										</div>
-										<div class="col-4 col-sm-3 col-md-2">
-											<div class="app"><a href="#"><img src="{% static 'img/daydream-view.png' %}"
-														width="60" height="60"><span>Daydream View</span></a></div>
-										</div>
-										<div class="col-4 col-sm-3 col-md-2">
-											<div class="app"><a href="#"><img src="{% static 'img/docs.png' %}" width="60"
-														height="60"><span>Docs</span></a></div>
-										</div>
-										<div class="col-4 col-sm-3 col-md-2">
-											<div class="app"><a href="#"><img src="{% static 'img/drawings.png' %}" width="60"
-														height="60"><span>Drawings</span></a></div>
-										</div>
-										<div class="col-4 col-sm-3 col-md-2">
-											<div class="app"><a href="#"><img src="{% static 'img/drive.png" width="60"
-														height="60"><span>Drive</span></a></div>
-										</div>
-										<div class="col-4 col-sm-3 col-md-2">
-											<div class="app"><a href="#"><img src="{% static 'img/earth.png' %}" width="60"
-														height="60"><span>Earth</span></a></div>
-										</div>
-										<div class="col-4 col-sm-3 col-md-2">
-											<div class="app"><a href="#"><img src="{% static 'img/finance.png' %}" width="60"
-														height="60"><span>Finance</span></a></div>
-										</div>
-										<div class="col-4 col-sm-3 col-md-2">
-											<div class="app"><a href="#"><img src="{% static 'img/forms.png' %}" width="60"
-														height="60"><span>Forms</span></a></div>
-										</div>
-										<div class="col-4 col-sm-3 col-md-2">
-											<div class="app"><a href="#"><img src="{% static 'img/gboard.png' %}" width="60"
-														height="60"><span>Gboard</span></a></div>
-										</div>
-										<div class="col-4 col-sm-3 col-md-2">
-											<div class="app"><a href="#"><img src="{% static 'img/gmail.png' %}" width="60"
-														height="60"><span>Gmail</span></a></div>
-										</div>
-										<div class="col-4 col-sm-3 col-md-2">
-											<div class="app"><a href="#"><img src="{% static 'img/google-alerts.png' %}"
-														width="60" height="60"><span>Google Alerts</span></a></div>
-										</div>
-										<div class="col-4 col-sm-3 col-md-2">
-											<div class="app"><a href="#"><img src="{% static 'img/google-allo.png' %}"
-														width="60" height="60"><span>Google Allo</span></a></div>
-										</div>
-										<div class="col-4 col-sm-3 col-md-2">
-											<div class="app"><a href="#"><img src="{% static 'img/google-camera.png' %}"
-														width="60" height="60"><span>Google Camera</span></a></div>
-										</div>
-										<div class="col-4 col-sm-3 col-md-2">
-											<div class="app"><a href="#"><img src="{% static 'img/google-cast.png' %}"
-														width="60" height="60"><span>Google Cast</span></a></div>
-										</div>
-										<div class="col-4 col-sm-3 col-md-2">
-											<div class="app"><a href="#"><img src="{% static 'img/google-classroom.png' %}"
-														width="60" height="60"><span>Google Classroom</span></a></div>
-										</div>
-										<div class="col-4 col-sm-3 col-md-2">
-											<div class="app"><a href="#"><img src="{% static 'img/google-cloud-print.png' %}"
-														width="60" height="60"><span>Google Cloud Print</span></a></div>
-										</div>
-										<div class="col-4 col-sm-3 col-md-2">
-											<div class="app"><a href="#"><img src="{% static 'img/google-duo.png' %}" width="60"
-														height="60"><span>Google Duo</span></a></div>
-										</div>
-										<div class="col-4 col-sm-3 col-md-2">
-											<div class="app"><a href="#"><img src="{% static 'img/google-expeditions.png' %}"
-														width="60" height="60"><span>Google Expeditions</span></a></div>
-										</div>
-										<div class="col-4 col-sm-3 col-md-2">
-											<div class="app"><a href="#"><img src="{% static 'img/google-express.png' %}"
-														width="60" height="60"><span>Google Express</span></a></div>
-										</div>
-										<div class="col-4 col-sm-3 col-md-2">
-											<div class="app"><a href="#"><img src="{% static 'img/google-fit.png' %}" width="60"
-														height="60"><span>Google Fit</span></a></div>
-										</div>
-										<div class="col-4 col-sm-3 col-md-2">
-											<div class="app"><a href="#"><img src="{% static 'img/google-flights.png' %}"
-														width="60" height="60"><span>Google Flights</span></a></div>
-										</div>
-										<div class="col-4 col-sm-3 col-md-2">
-											<div class="app"><a href="#"><img src="{% static 'img/google-fonts.png' %}"
-														width="60" height="60"><span>Google Fonts</span></a></div>
-										</div>
-										<div class="col-4 col-sm-3 col-md-2">
-											<div class="app"><a href="#"><img src="{% static 'img/google-goggles.png' %}"
-														width="60" height="60"><span>Google Goggles</span></a></div>
-										</div>
-										<div class="col-4 col-sm-3 col-md-2">
-											<div class="app"><a href="#"><img src="{% static 'img/google-groups.png' %}"
-														width="60" height="60"><span>Google Groups</span></a></div>
-										</div>
-										<div class="col-4 col-sm-3 col-md-2">
-											<div class="app"><a href="#"><img src="{% static 'img/google-home.png' %}"
-														width="60" height="60"><span>Google Home</span></a></div>
-										</div>
-										<div class="col-4 col-sm-3 col-md-2">
-											<div class="app"><a href="#"><img src="{% static 'img/google-input-tools.png' %}"
-														width="60" height="60"><span>Google Input Tools</span></a></div>
-										</div>
-										<div class="col-4 col-sm-3 col-md-2">
-											<div class="app"><a href="#"><img src="{% static 'img/google-one-today.png' %}"
-														width="60" height="60"><span>Google One Today</span></a></div>
-										</div>
-										<div class="col-4 col-sm-3 col-md-2">
-											<div class="app"><a href="#"><img src="{% static 'img/google-play.png' %}"
-														width="60" height="60"><span>Google Play</span></a></div>
-										</div>
-										<div class="col-4 col-sm-3 col-md-2">
-											<div class="app"><a href="#"><img src="{% static 'img/google-play-apps.png' %}"
-														width="60" height="60"><span>Google Play Apps</span></a></div>
-										</div>
-										<div class="col-4 col-sm-3 col-md-2">
-											<div class="app"><a href="#"><img src="{% static 'img/google-play-games.png' %}"
-														width="60" height="60"><span>Google Play Games</span></a></div>
-										</div>
-										<div class="col-4 col-sm-3 col-md-2">
-											<div class="app"><a href="#"><img src="{% static 'img/google-play-movies.png' %}"
-														width="60" height="60"><span>Google Play Movies &amp;
-														TV</span></a></div>
-										</div>
-										<div class="col-4 col-sm-3 col-md-2">
-											<div class="app"><a href="#"><img src="{% static 'img/google-play-music.png' %}"
-														width="60" height="60"><span>Google Play Music</span></a></div>
-										</div>
-										<div class="col-4 col-sm-3 col-md-2">
-											<div class="app"><a href="#"><img src="{% static 'img/google-play-newsstand.png' %}"
-														width="60" height="60"><span>Google Play Newsstand</span></a>
+											<div class="app">
+												<a href="#"><img src="./media/{{ app.Image }}" width="100" height="100">
+													<span>{{ app.Name }}</span>
+												</a>
 											</div>
 										</div>
-										<div class="col-4 col-sm-3 col-md-2">
-											<div class="app"><a href="#"><img src="{% static 'img/google-store.png' %}"
-														width="60" height="60"><span>Google Store</span></a></div>
-										</div>
-										<div class="col-4 col-sm-3 col-md-2">
-											<div class="app"><a href="#"><img src="{% static 'img/google-sync.png' %}"
-														width="60" height="60"><span>Google Sync</span></a></div>
-										</div>
-										<div class="col-4 col-sm-3 col-md-2">
-											<div class="app"><a href="#"><img src="{% static 'img/google-wifi.png' %}"
-														width="60" height="60"><span>Google Wifi</span></a></div>
-										</div>
-										<div class="col-4 col-sm-3 col-md-2">
-											<div class="app"><a href="#"><img src="{% static 'img/google-for-education.png' %}"
-														width="60" height="60"><span>Google for Education</span></a>
-											</div>
-										</div>
-										<div class="col-4 col-sm-3 col-md-2">
-											<div class="app"><a href="#"><img src="{% static 'img/google+.png' %}" width="60"
-														height="60"><span>Google+</span></a></div>
-										</div>
-										<div class="col-4 col-sm-3 col-md-2">
-											<div class="app"><a href="#"><img src="{% static 'img/hangouts.png' %}" width="60"
-														height="60"><span>Hangouts</span></a></div>
-										</div>
-										<div class="col-4 col-sm-3 col-md-2">
-											<div class="app"><a href="#"><img src="{% static 'img/inbox-by-gmail.png' %}"
-														width="60" height="60"><span>Inbox by Gmail</span></a></div>
-										</div>
-										<div class="col-4 col-sm-3 col-md-2">
-											<div class="app"><a href="#"><img src="{% static 'img/keep.png' %}" width="60"
-														height="60"><span>Keep</span></a></div>
-										</div>
-										<div class="col-4 col-sm-3 col-md-2">
-											<div class="app"><a href="#"><img src="{% static 'img/maps.png' %}" width="60"
-														height="60"><span>Maps</span></a></div>
-										</div>
-										<div class="col-4 col-sm-3 col-md-2">
-											<div class="app"><a href="#"><img src="{% static 'img/news.png' %}" width="60"
-														height="60"><span>News</span></a></div>
-										</div>
-										<div class="col-4 col-sm-3 col-md-2">
-											<div class="app"><a href="#"><img src="{% static 'img/nexus.png' %}" width="60"
-														height="60"><span>Nexus</span></a></div>
-										</div>
-										<div class="col-4 col-sm-3 col-md-2">
-											<div class="app"><a href="#"><img src="{% static 'img/onhub.png' %}" width="60"
-														height="60"><span>OnHub</span></a></div>
-										</div>
-										<div class="col-4 col-sm-3 col-md-2">
-											<div class="app"><a href="#"><img src="{% static 'img/photos.png' %}" width="60"
-														height="60"><span>Photos</span></a></div>
-										</div>
-										<div class="col-4 col-sm-3 col-md-2">
-											<div class="app"><a href="#"><img src="{% static 'img/pixel.png' %}" width="60"
-														height="60"><span>Pixel</span></a></div>
-										</div>
-										<div class="col-4 col-sm-3 col-md-2">
-											<div class="app"><a href="#"><img src="{% static 'img/project-fi.png' %}" width="60"
-														height="60"><span>Project Fi</span></a></div>
-										</div>
-										<div class="col-4 col-sm-3 col-md-2">
-											<div class="app"><a href="#"><img src="{% static 'img/scholar.png' %}" width="60"
-														height="60"><span>Scholar</span></a></div>
-										</div>
-										<div class="col-4 col-sm-3 col-md-2">
-											<div class="app"><a href="#"><img src="{% static 'img/search.png' %}" width="60"
-														height="60"><span>Search</span></a></div>
-										</div>
-										<div class="col-4 col-sm-3 col-md-2">
-											<div class="app"><a href="#"><img src="{% static 'img/sheets.png' %}" width="60"
-														height="60"><span>Sheets</span></a></div>
-										</div>
-										<div class="col-4 col-sm-3 col-md-2">
-											<div class="app"><a href="#"><img src="{% static 'img/sites.png' %}" width="60"
-														height="60"><span>Sites</span></a></div>
-										</div>
-										<div class="col-4 col-sm-3 col-md-2">
-											<div class="app"><a href="#"><img src="{% static 'img/slides.png' %}" width="60"
-														height="60"><span>Slides</span></a></div>
-										</div>
-										<div class="col-4 col-sm-3 col-md-2">
-											<div class="app"><a href="#"><img src="{% static 'img/smartbox.png' %}" width="60"
-														height="60"><span>Smartbox</span></a></div>
-										</div>
-										<div class="col-4 col-sm-3 col-md-2">
-											<div class="app"><a href="#"><img src="{% static 'img/tango.png' %}" width="60"
-														height="60"><span>Tango</span></a></div>
-										</div>
-										<div class="col-4 col-sm-3 col-md-2">
-											<div class="app"><a href="#"><img src="{% static 'img/tilt-brush.png' %}" width="60"
-														height="60"><span>Tilt Brush</span></a></div>
-										</div>
-										<div class="col-4 col-sm-3 col-md-2">
-											<div class="app"><a href="#"><img src="{% static 'img/translate.png' %}" width="60"
-														height="60"><span>Translate</span></a></div>
-										</div>
-										<div class="col-4 col-sm-3 col-md-2">
-											<div class="app"><a href="#"><img src="{% static 'img/trips.png' %}" width="60"
-														height="60"><span>Trips</span></a></div>
-										</div>
-										<div class="col-4 col-sm-3 col-md-2">
-											<div class="app"><a href="#"><img src="{% static 'img/voice.png' %}" width="60"
-														height="60"><span>Voice</span></a></div>
-										</div>
-										<div class="col-4 col-sm-3 col-md-2">
-											<div class="app"><a href="#"><img src="{% static 'img/waze.png' %}" width="60"
-														height="60"><span>Waze</span></a></div>
-										</div>
-										<div class="col-4 col-sm-3 col-md-2">
-											<div class="app"><a href="#"><img src="{% static 'img/youtube.png' %}" width="60"
-														height="60"><span>YouTube</span></a></div>
-										</div>
-										<div class="col-4 col-sm-3 col-md-2">
-											<div class="app"><a href="#"><img src="{% static 'img/youtube-gaming.png' %}"
-														width="60" height="60"><span>YouTube Gaming</span></a></div>
-										</div>
-										<div class="col-4 col-sm-3 col-md-2">
-											<div class="app"><a href="#"><img src="{% static 'img/youtube-kids.png' %}"
-														width="60" height="60"><span>YouTube Kids</span></a></div>
-										</div>
-										<div class="col-4 col-sm-3 col-md-2">
-											<div class="app"><a href="#"><img src="{% static 'img/zagat.png' %}" width="60"
-														height="60"><span>Zagat</span></a></div>
-										</div>
+										{% endfor %}
 									</div>
 								</div>
 							</div>
@@ -437,40 +123,32 @@
 				</div>
 			</div>
 		</div>
-	</div>
-	<footer>
-		<div class="row">
-			<div class="col-sm-6 col-md-4 footer-navigation">
-				<h3><a href="#">Company<span>logo </span></a></h3>
-				<p class="links"><a href="#">Home</a><strong> · </strong><a href="#">Blog</a><strong> · </strong><a
-						href="#">Pricing</a><strong> · </strong><a href="#">About</a><strong> · </strong><a
-						href="#">Faq</a><strong> · </strong><a href="#">Contact</a></p>
-				<p class="company-name">Company Name © 2015 </p>
-			</div>
-			<div class="col-sm-6 col-md-4 footer-contacts">
-				<div><span class="fa fa-map-marker footer-contacts-icon"> </span>
-					<p><span class="new-line-span">21 Revolution Street</span> Paris, France</p>
+		<footer>
+			<div class="row">
+				<div class="col-sm-6 col-md-4 footer-navigation">
+					<h3><a href="#"><img src="" alt="Swoop"></span></a></h3>
+					<p class="company-name">{{ company_name }} Inc. © 2020 </p>
 				</div>
-				<div><i class="fa fa-phone footer-contacts-icon"></i>
-					<p class="footer-center-info email text-left"> +1 555 123456</p>
+				<div class="col-sm-6 col-md-4 footer-contacts">
+					<div><span class="fa fa-map-marker footer-contacts-icon"> </span>
+						<p><span class="new-line-span">ATS DOLCE</span> Greater Noida, India</p>
+					</div>
+					<div><i class="fa fa-envelope footer-contacts-icon"></i>
+						<p> <a href="#" target="_blank">{{ company_email }}</a></p>
+					</div>
 				</div>
-				<div><i class="fa fa-envelope footer-contacts-icon"></i>
-					<p> <a href="#" target="_blank">support@company.com</a></p>
+				<div class="col-md-4 footer-about">
+					<h4>About the company</h4>
+					<p> Our Company focuses on creating apps that gives you performance</p>
+					<div class="social-links social-icons"><a href="#"><i class="fa fa-facebook"></i></a><a href="#"><i
+								class="fa fa-twitter"></i></a><a href="#"><i class="fa fa-linkedin"></i></a><a
+							href="#"><i class="fa fa-github"></i></a></div>
 				</div>
 			</div>
-			<div class="col-md-4 footer-about">
-				<h4>About the company</h4>
-				<p> Lorem ipsum dolor sit amet, consectateur adispicing elit. Fusce euismod convallis velit, eu auctor
-					lacus vehicula sit amet. </p>
-				<div class="social-links social-icons"><a href="#"><i class="fa fa-facebook"></i></a><a href="#"><i
-							class="fa fa-twitter"></i></a><a href="#"><i class="fa fa-linkedin"></i></a><a href="#"><i
-							class="fa fa-github"></i></a></div>
-			</div>
-		</div>
-	</footer>
-	<script src="{% static 'bootstrap/js/bootstrap.min.js' %}"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.4.8/swiper-bundle.min.js' %}"></script>
-	<script src="{% static 'js/script.min.js' %}"></script>
+		</footer>
+		<script src="{% static 'bootstrap/js/bootstrap.min.js' %}"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.4.8/swiper-bundle.min.js' %}"></script>
+		<script src="{% static 'js/script.min.js' %}"></script>
 </body>
 
 </html>
