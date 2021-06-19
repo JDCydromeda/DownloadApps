@@ -1,1 +1,1 @@
-web: gunicorn Download.wsgi
+web: gunicorn Download.wsgi --log-file -
