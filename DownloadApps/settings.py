@@ -26,7 +26,7 @@ SECRET_KEY = 'django-insecure-lh(5hll7am=o5rik#ez@7%$z!@g=b%6h6g4n)ftr0$je_)t=1w
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['swoop-download.herokuapp.com']
 
 
 # Application definition
