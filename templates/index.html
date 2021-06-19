@@ -19,7 +19,7 @@
 	<div>
 		<nav class="navbar navbar-light navbar-expand-md sticky-top navigation-clean-button"
 			style="height:80px;background-color:#37434d;color:#ffffff;">
-			<div class="container-fluid"><a class="navbar-brand" href="#"><i class="fa fa-globe"></i>&nbsp;{{ company_name }}
+			<div class="container-fluid"><a class="navbar-brand" href="#"><i class="fa fa-globe"></i>&nbsp;{{company_name}}
 					Inc.</a><button data-bs-toggle="collapse" class="navbar-toggler" data-bs-target="#navcol-1"><span
 						class="visually-hidden">Toggle navigation</span><span
 						class="navbar-toggler-icon"></span></button>
@@ -55,7 +55,7 @@
 					<h3 data-animation="animated fadeInUp">Swoop Inc.</h3>
 					<h1 data-animation="animated fadeInUp">Swoop The Browser</h1>
 					<p data-animation="animated fadeInUp">Check it out 10X speed</p>
-					<a href="#" data-animation="animated fadeInUp">Download</a>
+					<a href="detail/Swoop Browser" data-animation="animated fadeInUp">Download</a>
 				</div>
 			</div>
 			<!-- End of Slide -->
@@ -109,7 +109,8 @@
 										{% for app in apps %}
 										<div class="col-4 col-sm-3 col-md-2">
 											<div class="app">
-												<a href="#"><img src="./media/{{ app.Image }}" width="100" height="100">
+												<a href="./detail/{{ app.Name }}"><img src="./media/{{ app.Image }}"
+														width="100" height="100">
 													<span>{{ app.Name }}</span>
 												</a>
 											</div>
@@ -126,7 +127,7 @@
 		<footer>
 			<div class="row">
 				<div class="col-sm-6 col-md-4 footer-navigation">
-					<h3><a href="#"><img src="" alt="Swoop"></span></a></h3>
+					<h3><a href="https://swoop.cf"><img src="{% static 'img/logo.svg' %}" width="80px" height="80px" alt="Swoop"></span></a></h3>
 					<p class="company-name">{{ company_name }} Inc. © 2020 </p>
 				</div>
 				<div class="col-sm-6 col-md-4 footer-contacts">
